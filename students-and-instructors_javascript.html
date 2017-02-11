@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  var students = [
+    {first_name: 'Michael', last_name: 'Jordan'},
+    {first_name: 'John', last_name: 'Rosales'},
+    {first_name: 'Mark', last_name: 'Guillen'},
+    {first_name: 'KB', last_name: 'Tonel'}
+  ]
+  function list_students(arr) {
+    for (var student in arr) {
+      console.log(arr[student].first_name + " " + arr[student].last_name);
+    }
+  }
+  list_students(students)
+
+  var users = {
+    'Students': [
+      {first_name: 'Michael', last_name: 'Jordan'},
+      {first_name: 'John', last_name: 'Rosales'},
+      {first_name: 'Mark', last_name: 'Guillen'},
+      {first_name: 'KB', last_name: 'Tonel'}
+    ],
+    'Instructors': [
+      {first_name: 'Michael', last_name: 'Choi'},
+      {first_name: 'Martin', last_name: 'Puryear'}
+    ]
+  }
+  console.log('--------------------------------')
+  // function list_students_instructors(obj) {
+  //   console.log(obj);
+  //   var myarr = obj;
+  //   console.log(myarr);
+  //   for (var key in obj) {
+  //     console.log()
+  //   }
+  //   key = "Students";
+  //   console.log(myarr.key)
+  //
+  //   // var keys = Object.keys(arr);
+  //   // for (var key in keys) {
+  //   //   console.log(keys[key]);
+  //   //   currkey = keys[key]
+  //   //   console.log(arr.currkey)
+  //   // }
+  // }
+  // list_students_instructors(users)
+  </script>
+</body>
+</html>

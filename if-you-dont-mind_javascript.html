@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  var HOUR = 8;
+  var MINUTE = 10;
+  var PERIOD = "PM";
+  var string = ""
+  if (MINUTE >= 30) {
+    HOUR = HOUR + 1;
+    var newstr = "It's almost " + HOUR;
+    string = string.concat(newstr);
+  }
+  else {
+    var newstr = "It's just after " + HOUR;
+    string = string.concat(newstr);
+  }
+  if (PERIOD === "AM") {
+    var newstr = " in the morning";
+    string = string.concat(newstr);
+  }
+  else {
+    var newstr = " in the evening";
+    string = string.concat(newstr);
+  }
+  console.log(string)
+  </script>
+</body>
+</html>

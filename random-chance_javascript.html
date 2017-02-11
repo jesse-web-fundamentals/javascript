@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  function random_chance(total, target) {
+    for (var i = total; i > 0; i--) {
+      chance = Math.trunc(Math.random() * 100);
+      if(chance === 99) {
+        console.log('Won!');
+        won_quarts = Math.trunc(Math.random() * 50)+50;
+        console.log("You won" + won_quarts)
+        i = i + won_quarts;
+
+        console.log(i);
+        if(i >= target) {
+          return i;
+        }
+      } else {
+        console.log(i);
+      }
+    }
+    return i;
+  }
+  console.log(random_chance(150, 200));
+</script>
+</body>
+</html>
